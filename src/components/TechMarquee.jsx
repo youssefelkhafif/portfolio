@@ -1,24 +1,19 @@
 const items = [
-  { type: "label", text: "Full Stack Developer" },
-  { type: "icon", name: "JS",    bg: "#F0DB4F", color: "#000", text: "JS" },
-  { type: "icon", name: "TS",    bg: "#3178C6", color: "#fff", text: "TS" },
+  { type: "label", text: "Frontend" },
+  { type: "icon", name: "HTML", img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" },
+  { type: "icon", name: "CSS", img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" },
+  { type: "icon", name: "Tailwind", img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" }, 
+  { type: "icon", name: "JavaScript", img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" },
   { type: "icon", name: "React", img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
-  { type: "label", text: "System Programming" },
-  { type: "icon", name: "Nginx", img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nginx/nginx-original.svg" },
-  { type: "icon", name: "Node",  img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" },
-  { type: "icon", name: "Docker",img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" },
-  { type: "label", text: "DevOps & Cloud" },
-  { type: "icon", name: "PG",    img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" },
-  { type: "icon", name: "Flutter",img:"https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" },
-  { type: "icon", name: "Linux", img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" },
-  { type: "label", text: "Mobile Development" },
-  { type: "icon", name: "Git",   img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" },
-  { type: "icon", name: "Mongo", img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" },
-  { type: "icon", name: "Supabase", img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/supabase/supabase-original.svg" },
-  { type: "label", text: "Web Technologies" },
-  { type: "icon", name: "C",     img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" },
-  { type: "icon", name: "CPP",   img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" },
-  { type: "icon", name: "Python",img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" },
+
+  { type: "label", text: "Backend" },
+  { type: "icon", name: "PHP", img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" },
+  { type: "icon", name: "Laravel", img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/laravel/laravel-original.svg" },
+  { type: "icon", name: "MySQL", img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" },
+
+  { type: "label", text: "Tools" },
+  { type: "icon", name: "Git", img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" },
+  { type: "icon", name: "GitHub", img: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" },
 ];
 
 function Item({ item }) {

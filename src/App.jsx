@@ -5,6 +5,7 @@ import Background from "./components/Background";
 import ContactFooter from "./components/Contactfooter";
 import TechMarquee from "./components/TechMarquee";
 import Projects from "./components/Projects";
+import Skills from "./components/Skills";
 
 export default function App() {
   return (
@@ -37,11 +38,10 @@ export default function App() {
 
           {/* Main Content */}
           <div className="flex-1 flex flex-col gap-6">
-            <div id="Home" className="flex-1 flex flex-col gap-6">
-              <Hero />
-              <Projects />
+            <div id="Skils" className="flex-1 flex flex-col gap-6">
+              <Skills />
             </div>
-            <div id="second" className="flex-1 flex flex-col gap-6">
+            <div id="Home" className="flex-1 flex flex-col gap-6">
               <Hero />
               <Projects />
             </div>

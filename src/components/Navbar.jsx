@@ -68,10 +68,10 @@ const ClockIcon = () => (
 
 const navLinks = [
   { icon: <HomeIcon />, label: "Home", path:"#Home" },
-  { icon: <BriefcaseIcon />, label: "Work", path:"#Footer" },
-  { icon: <WrenchIcon />, label: "Tools", path: "#second" },
-  { icon: <LayersIcon />, label: "Stack", path: "" },
-  { icon: <FileIcon />, label: "Blog", path: "" },
+  { icon: <BriefcaseIcon />, label: "Work", path:"" },
+  { icon: <WrenchIcon />, label: "Tools", path: "" },
+  { icon: <LayersIcon />, label: "skills", path: "#Skils" },
+  { icon: <FileIcon />, label: "Blog", path: "#Footer" },
 ];
 
 export default function Navbar() {
