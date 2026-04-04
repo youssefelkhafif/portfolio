@@ -250,7 +250,7 @@ export default function Background() {
   return (
     <canvas
       ref={canvasRef}
-      style={{ position: "fixed", inset: 0, zIndex: -1, display: "block", width: "100vw", height: "100vh" }}
+      style={{ position: "fixed", inset: 0, zIndex: -1, display: "block", width: "100%", height: "100%" }}
     />
   );
 }
