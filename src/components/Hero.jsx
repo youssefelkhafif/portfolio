@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
 
 const codeLines = [
-  { lang: "Java",    code: 'System.out.println("Hello, I\'m Youssef");' },
-  { lang: "Python",  code: 'print("Hello, I\'m Youssef")' },
-  { lang: "C",       code: 'printf("Hello, I\'m Youssef\\n");' },
-  { lang: "JS",      code: 'console.log("Hello, I\'m Youssef")' },
+  { lang: "Java", code: 'System.out.println("Hello, I\'m Youssef");' },
+  { lang: "Python", code: 'print("Hello, I\'m Youssef")' },
+  { lang: "C", code: 'printf("Hello, I\'m Youssef\\n");' },
+  { lang: "JS", code: 'console.log("Hello, I\'m Youssef")' },
 ];
 
 function CodeBlock() {
@@ -105,9 +105,9 @@ export default function Hero() {
         maxWidth: 480,
         marginBottom: 28,
       }}>
-        Curious, highly motivated Software Engineer with a strong background in low-level systems
-        programming, web development, and DevOps. Known for being proactive, deeply involved in
-        technical and community initiatives.
+        Full Stack Developer driven by curiosity and continuous learning,
+         with hands-on experience in modern web technologies, systems programming, and DevOps.
+          Focused on building scalable, high-performance applications.
       </p>
 
       <div style={{ display: "flex", gap: 12 }}>

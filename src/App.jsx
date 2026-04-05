@@ -39,10 +39,11 @@ export default function App() {
           {/* Main Content */}
           <div className="flex-1 flex flex-col gap-6">
             <div id="Skils" className="flex-1 flex flex-col gap-6">
+              <Hero />
               <Skills />
             </div>
             <div id="Home" className="flex-1 flex flex-col gap-6">
-              <Hero />
+              
               <Projects />
             </div>
           </div>
