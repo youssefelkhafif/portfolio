@@ -2,9 +2,15 @@
 
 Welcome to my personal portfolio! 🚀
 
-I am ** YOUSSEF ELKHAFIF **, a curious and highly motivated **Full-Stack Developer** with a strong foundation in both frontend and backend development. I enjoy building **modern, responsive, and performant web applications** that solve real-world problems.  
+I am **YOUSSEF ELKHAFIF**, a curious and highly motivated **Full-Stack Developer** with a strong foundation in both frontend and backend development. I enjoy building **modern, responsive, and performant web applications** that solve real-world problems.  
 
-This portfolio showcases my skills, projects, and the technologies I work with every day.
+This Portfolio Showcases my skills, projects, and the technologies I work with every day.
+
+---
+
+## 🌐 Live Portfolio
+
+👉 [ View My Portfolio Here ](https://youssefelkhafif.netlify.app/)
 
 ---
 
@@ -21,8 +27,6 @@ I have a strong background in:
 - **Frontend:** HTML, CSS, Tailwind, JavaScript, React  
 - **Backend:** PHP, Laravel, MySQL  
 - **Tools & DevOps:** Git, GitHub, Docker, Linux basics  
-
-I love combining **problem-solving, creativity, and technology** to build solutions that matter.  
 
 ---
 
@@ -50,23 +54,19 @@ I love combining **problem-solving, creativity, and technology** to build soluti
 - **Project 2:** Description, tech stack, live link  
 - **Project 3:** Description, tech stack, live link  
 
-> Each project demonstrates my ability to design, implement, and deploy **full-stack web applications**.
-
 ---
 
 ## 📬 Contact Me
 
 I am always open to connecting with other developers, recruiters, or anyone who loves building cool things!  
 
-**Email:** [youssefelkhafif35@gmail.com](mailto:youssefelkhafif35@gmail.com)
+**Email:** [youssefelkhafif35@gmail.com](mailto:youssefelkhafif35@gmail.com)  
 - **GitHub:** [github.com/youssefelkhafif](https://github.com/youssefelkhafif)  
-- **LinkedIn:** [linkedin.com/in/youssefelkhafif](https://www.linkedin.com/in/youssef-el-khafif-55b75b400/)
+- **LinkedIn:** [linkedin.com/in/youssefelkhafif](https://www.linkedin.com/in/youssef-el-khafif-55b75b400/)  
 
 ---
 
 ## 🚀 How to Run This Portfolio Locally
-
-If you want to run my portfolio locally:
 
 ```bash
 # Clone the repo
