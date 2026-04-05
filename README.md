@@ -58,9 +58,9 @@ I love combining **problem-solving, creativity, and technology** to build soluti
 
 I am always open to connecting with other developers, recruiters, or anyone who loves building cool things!  
 
-- **Email:** youssef@example.com *(replace with your real email)*  
+- **Email:** youssefkhafif35@gmail.com 
 - **GitHub:** [github.com/youssefelkhafif](https://github.com/youssefelkhafif)  
-- **LinkedIn:** [linkedin.com/in/youssefelkhafif](https://www.linkedin.com/in/youssefelkhafif)  
+- **LinkedIn:** [linkedin.com/in/youssefelkhafif](https://www.linkedin.com/in/youssef-el-khafif-55b75b400/)
 
 ---
 
