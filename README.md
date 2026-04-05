@@ -1,16 +1,82 @@
-# React + Vite
+# Youssef El Khafif – Full-Stack Developer Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my personal portfolio! 🚀
 
-Currently, two official plugins are available:
+I am ** YOUSSEF ELKHAFIF **, a curious and highly motivated **Full-Stack Developer** with a strong foundation in both frontend and backend development. I enjoy building **modern, responsive, and performant web applications** that solve real-world problems.  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+This portfolio showcases my skills, projects, and the technologies I work with every day.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🧑‍💻 About Me
 
-## Expanding the ESLint configuration
+- **Name:** Youssef El Khafif  
+- **Location:** Morocco  
+- **Role:** Full-Stack Developer  
+- **Expertise:** Web development, systems programming, DevOps basics  
+- **Passion:** Writing clean code, learning new frameworks, contributing to open-source, and building tools that make life easier.  
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+I have a strong background in:
+
+- **Frontend:** HTML, CSS, Tailwind, JavaScript, React  
+- **Backend:** PHP, Laravel, MySQL  
+- **Tools & DevOps:** Git, GitHub, Docker, Linux basics  
+
+I love combining **problem-solving, creativity, and technology** to build solutions that matter.  
+
+---
+
+## 💻 Technologies & Skills
+
+### Frontend
+- HTML5, CSS3, Tailwind CSS  
+- JavaScript, React  
+
+### Backend
+- PHP, Laravel  
+- MySQL  
+
+### Tools & Others
+- Git, GitHub  
+- Docker, Linux  
+
+---
+
+## 📂 Portfolio Projects
+
+*(Projects will be added soon — live demos and screenshots will appear here)*
+
+- **Project 1:** Description, tech stack, live link  
+- **Project 2:** Description, tech stack, live link  
+- **Project 3:** Description, tech stack, live link  
+
+> Each project demonstrates my ability to design, implement, and deploy **full-stack web applications**.
+
+---
+
+## 📬 Contact Me
+
+I am always open to connecting with other developers, recruiters, or anyone who loves building cool things!  
+
+- **Email:** youssef@example.com *(replace with your real email)*  
+- **GitHub:** [github.com/youssefelkhafif](https://github.com/youssefelkhafif)  
+- **LinkedIn:** [linkedin.com/in/youssefelkhafif](https://www.linkedin.com/in/youssefelkhafif)  
+
+---
+
+## 🚀 How to Run This Portfolio Locally
+
+If you want to run my portfolio locally:
+
+```bash
+# Clone the repo
+git clone https://github.com/youssefelkhafif/portfolio.git
+
+# Go into the project directory
+cd portfolio
+
+# Install dependencies
+npm install
+
+# Start the development server
+npm run dev
