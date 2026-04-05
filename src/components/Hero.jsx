@@ -85,7 +85,7 @@ export default function Hero() {
         marginBottom: 0,
         letterSpacing: "-1px",
       }}>
-        SOFTWARE
+        Full-Stack 
       </h1>
       <h1 style={{
         fontSize: "clamp(48px, 6vw, 80px)",
@@ -95,7 +95,7 @@ export default function Hero() {
         marginBottom: 20,
         letterSpacing: "-1px",
       }}>
-        ENGINEER
+        Developer
       </h1>
 
       <p style={{
@@ -111,7 +111,7 @@ export default function Hero() {
       </p>
 
       <div style={{ display: "flex", gap: 12 }}>
-        <button style={{
+        <a href="#Project" style={{
           padding: "11px 28px",
           borderRadius: 12,
           background: "#f97316",
@@ -127,8 +127,8 @@ export default function Hero() {
           onMouseLeave={e => e.target.style.boxShadow = "0 4px 20px rgba(249,115,22,0.4)"}
         >
           View Projects
-        </button>
-        <button style={{
+        </a>
+        <a href="#Footer" style={{
           padding: "11px 28px",
           borderRadius: 12,
           background: "transparent",
@@ -143,7 +143,7 @@ export default function Hero() {
           onMouseLeave={e => { e.target.style.borderColor = "rgba(255,255,255,0.15)"; e.target.style.color = "rgba(255,255,255,0.75)"; }}
         >
           Contact Me
-        </button>
+        </a>
       </div>
     </div>
   );

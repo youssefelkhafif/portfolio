@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
-// import { Link } from "react-router-dom";
 
+// --- Icons ---
 const HomeIcon = () => (
   <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
     <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" /><polyline points="9 22 9 12 15 12 15 22" />
@@ -49,35 +49,26 @@ const DownloadIcon = () => (
   </svg>
 );
 
-const RocketIcon = () => (
-  <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-    <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z" />
-    <path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z" />
-    <path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0" />
-    <path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5" />
-  </svg>
-);
-
 const ClockIcon = () => (
   <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
     <circle cx="12" cy="12" r="10" /><polyline points="12 6 12 12 16 14" />
   </svg>
 );
 
-
-
 const navLinks = [
-  { icon: <HomeIcon />, label: "Home", path:"#Home" },
-  { icon: <BriefcaseIcon />, label: "Work", path:"" },
-  { icon: <WrenchIcon />, label: "Tools", path: "" },
-  { icon: <LayersIcon />, label: "skills", path: "#Skils" },
-  { icon: <FileIcon />, label: "Blog", path: "#Footer" },
+  { icon: <HomeIcon />, label: "Home", path: "#Home" },
+  { icon: <BriefcaseIcon />, label: "About", path: "#Journey" },
+  { icon: <WrenchIcon />, label: "Skills", path: "#Skils" },
+  { icon: <LayersIcon />, label: "Project", path: "#Project" },
+  { icon: <FileIcon />, label: "Contact", path: "#Footer" },
 ];
 
 export default function Navbar() {
   const [active, setActive] = useState(0);
   const [time, setTime] = useState("");
+  // const [userCount, setUserCount] = useState(39);
 
+  // Clock Logic
   useEffect(() => {
     const update = () => {
       const now = new Date();
@@ -92,11 +83,20 @@ export default function Navbar() {
     return () => clearInterval(id);
   }, []);
 
-
+  // Simulated Live User Count (Fluctuates slightly)
+  // useEffect(() => {
+  //   const interval = setInterval(() => {
+  //     setUserCount(prev => {
+  //       const change = Math.random() > 0.5 ? 1 : -1;
+  //       const newCount = prev + change;
+  //       return newCount < 1 ? 1 : newCount; // Keep at least 1 user online
+  //     });
+  //   }, 8000);
+  //   return () => clearInterval(interval);
+  // }, []);
 
   return (
-
-    <nav className="flex items-center gap-2 px-3 py-2 rounded-2xl bg-[#12151f] border border-white/[0.06] shadow-[0_8px_40px_rgba(0,0,0,0.6)] backdrop-blur-md">
+    <nav className="flex items-center gap-2 px-3 py-2 rounded-2xl bg-[#12151f] border border-white/[0.06] shadow-[0_8px_40px_rgba(0,0,0,0.6)] backdrop-blur-md w-fit">
 
       {/* Avatar + Name */}
       <button className="flex items-center gap-2 px-2 py-1.5 rounded-xl hover:bg-white/5 transition-colors group">
@@ -114,22 +114,18 @@ export default function Navbar() {
       {/* Nav Icons */}
       <div className="flex items-center gap-0.5">
         {navLinks.map((link, i) => (
-
           <a
             href={link.path}
             key={i}
             onClick={() => setActive(i)}
             title={link.label}
-
             className={`p-2.5 rounded-xl transition-all duration-200 ${active === i
               ? "bg-white/10 text-white"
               : "text-white/40 hover:text-white/70 hover:bg-white/5"
               }`}
           >
-
             {link.icon}
           </a>
-
         ))}
       </div>
 
@@ -148,11 +144,17 @@ export default function Navbar() {
 
       {/* Online count */}
       <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-white/5 border border-white/[0.07]">
-        <span className="w-2 h-2 rounded-full bg-emerald-400 shadow-[0_0_6px_rgba(52,211,153,0.8)] flex-shrink-0" />
+        {/* Animated Green Dot */}
+        <span className="relative flex h-2 w-2">
+          <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+          <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+        </span>
         <span className="text-white/40">
           <UsersIcon />
         </span>
-        <span className="text-white/80 text-xs font-medium">39</span>
+        <span className="text-white/80 text-xs font-medium">
+          39
+        </span>
       </div>
 
       {/* Bookmark */}
@@ -161,15 +163,17 @@ export default function Navbar() {
       </button>
 
       {/* CV Button */}
-      <button className="flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl bg-gradient-to-r from-orange-500 to-orange-400 hover:from-orange-400 hover:to-orange-300 text-white text-sm font-bold shadow-[0_4px_14px_rgba(249,115,22,0.4)] hover:shadow-[0_4px_18px_rgba(249,115,22,0.6)] transition-all duration-200 active:scale-95">
-        <DownloadIcon />
-        CV
-      </button>
-
+      <a
+        href="/youssef_elkhafif_cv.pdf"
+        download="Youssef_ElKhafif_CV.pdf"
+        className="ml-1"
+      >
+        <button className="flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl bg-gradient-to-r from-orange-500 to-orange-400 hover:from-orange-400 hover:to-orange-300 text-white text-sm font-bold shadow-[0_4px_14px_rgba(249,115,22,0.4)] hover:shadow-[0_4px_18px_rgba(249,115,22,0.6)] transition-all duration-200 active:scale-95">
+          <DownloadIcon />
+          CV
+        </button>
+      </a>
 
     </nav>
-
   );
 }
-
-

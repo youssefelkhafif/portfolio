@@ -60,7 +60,7 @@ const projects = [
   },
 ];
 
-const filters = ["All", "Low-Level", "Full-Stack", "C++", "DevOps"];
+const filters = ["All", "Low-Level", "Full-Stack"];
 
 function ProjectCard({ project }) {
   const [hovered, setHovered] = useState(false);

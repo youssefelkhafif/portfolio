@@ -1,3 +1,5 @@
+import React from "react";
+
 const items = [
   { type: "label", text: "Frontend" },
   { type: "icon", name: "HTML", img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" },
@@ -54,19 +56,14 @@ function Item({ item }) {
         overflow: "hidden",
       }}
     >
-      {item.img ? (
-        <img src={item.img} alt={item.name} style={{ width: 24, height: 24, objectFit: "contain" }} />
-      ) : (
-        <span style={{ fontSize: 11, fontWeight: 800, color: item.color, background: item.bg, padding: "2px 4px", borderRadius: 4 }}>
-          {item.text}
-        </span>
-      )}
+      <img src={item.img} alt={item.name} style={{ width: 24, height: 24, objectFit: "contain" }} />
     </div>
   );
 }
 
 export default function TechMarquee() {
-  const track = [...items, ...items]; // duplicate for seamless loop
+  // Triple the items if the list is short to ensure it fills the screen width
+  const track = [...items, ...items, ...items]; 
 
   return (
     <div
@@ -74,37 +71,36 @@ export default function TechMarquee() {
         width: "100%",
         overflow: "hidden",
         position: "relative",
-        padding: "10px 0",
+        padding: "20px 0",
         zIndex: 10,
+        background: "transparent"
       }}
     >
       {/* Fade edges */}
       <div style={{
-        position: "absolute", left: 0, top: 0, bottom: 0, width: 80,
+        position: "absolute", left: 0, top: 0, bottom: 0, width: 100,
         background: "linear-gradient(to right, #050816, transparent)",
         zIndex: 2, pointerEvents: "none",
       }} />
       <div style={{
-        position: "absolute", right: 0, top: 0, bottom: 0, width: 80,
+        position: "absolute", right: 0, top: 0, bottom: 0, width: 100,
         background: "linear-gradient(to left, #050816, transparent)",
         zIndex: 2, pointerEvents: "none",
       }} />
 
       <style>{`
         @keyframes marquee {
-          0%   { transform: translateX(0); }
-          100% { transform: translateX(-50%); }
+          from { transform: translateX(0); }
+          to { transform: translateX(calc(-100% / 3)); } 
         }
         .marquee-track {
           display: flex;
           align-items: center;
-          gap: 14px;
+          gap: 30px; /* Increased gap for better look */
           width: max-content;
-          animation: marquee 30s linear infinite;
+          animation: marquee 15s linear infinite;
         }
-        // .marquee-track:hover {
-        //   animation-play-state: paused;
-        // }
+        
       `}</style>
 
       <div className="marquee-track">
