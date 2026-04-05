@@ -1,5 +1,5 @@
 import cat from '../assets/img/steam_cat.jpg'
-import my_picture from'../assets/img/my_picture'
+import my_picture from '../assets/img/My_picture.jpg'
 
 
 
