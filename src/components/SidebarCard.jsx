@@ -48,7 +48,7 @@ export default function SidebarCard() {
       <div>
         <h2 className="text-lg font-bold text-white">Youssef El Khafif</h2>
         <p className="text-orange-400 text-xs font-semibold mt-0.5">
-          Software Engineer / Junior Full-stack Developer
+         Full-stack Developer
         </p>
       </div>
 
