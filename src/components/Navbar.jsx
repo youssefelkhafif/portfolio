@@ -99,8 +99,6 @@ export default function Navbar() {
 
   return (
     <nav className="flex items-center gap-2 px-3 py-2 rounded-2xl bg-[#12151f] border border-white/[0.06] shadow-[0_8px_40px_rgba(0,0,0,0.6)] backdrop-blur-md w-fit">
-
-      {/* Avatar + Name */}
       <button className="flex items-center gap-2 px-2 py-1.5 rounded-xl hover:bg-white/5 transition-colors group">
         <div className="w-8 h-8 rounded-full bg-gradient-to-br from-orange-400 to-orange-600 flex items-center justify-center text-white text-xs font-bold shadow-md flex-shrink-0">
           YU
@@ -109,71 +107,44 @@ export default function Navbar() {
           Youssef.
         </span>
       </button>
-
-      {/* Divider */}
       <div className="w-px h-6 bg-white/10 mx-1" />
-
-      {/* Nav Icons */}
       <div className="flex items-center gap-0.5">
         {navLinks.map((link, i) => (
           <a
             href={link.path}
-            key={i}
+            key={link.label}
             onClick={() => setActive(i)}
             title={link.label}
-            className={`p-2.5 rounded-xl transition-all duration-200 ${active === i
-              ? "bg-white/10 text-white"
-              : "text-white/40 hover:text-white/70 hover:bg-white/5"
-              }`}
+            className={`p-2.5 rounded-xl transition-all duration-200 ${
+              active === i ? "bg-white/10 text-white" : "text-white/40 hover:text-white/70 hover:bg-white/5"
+            }`}
           >
             {link.icon}
           </a>
         ))}
       </div>
-
-      {/* Divider */}
       <div className="w-px h-6 bg-white/10 mx-1" />
-
-      {/* Clock */}
       <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-white/5 border border-white/[0.07]">
-        <span className="text-orange-400">
-          <ClockIcon />
-        </span>
-        <span className="text-white/80 text-xs font-mono font-medium tracking-wide whitespace-nowrap">
-          {time}
-        </span>
+        <span className="text-orange-400"><ClockIcon /></span>
+        <span className="text-white/80 text-xs font-mono font-medium tracking-wide whitespace-nowrap">{time}</span>
       </div>
-
-      {/* Online count */}
       <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-xl bg-white/5 border border-white/[0.07]">
-        {/* Animated Green Dot */}
         <span className="relative flex h-2 w-2">
           <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
           <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
         </span>
-        <span className="text-white/40">
-          <UsersIcon />
-        </span>
+        <span className="text-white/40"><UsersIcon /></span>
         <span className="text-white/80 text-xs font-medium" title="People viewing right now">{onlineCount}</span>
       </div>
-
-      {/* Bookmark */}
       <button className="p-2.5 rounded-xl text-white/40 hover:text-white/70 hover:bg-white/5 transition-all duration-200">
         <BookmarkIcon />
       </button>
-
-      {/* CV Button */}
-      <a
-        href="/youssef_elkhafif_cv.pdf"
-        download="Youssef_ElKhafif_CV.pdf"
-        className="ml-1"
-      >
+      <a href="/youssef_elkhafif_cv.pdf" download="Youssef_ElKhafif_CV.pdf" className="ml-1">
         <button className="flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl bg-gradient-to-r from-orange-500 to-orange-400 hover:from-orange-400 hover:to-orange-300 text-white text-sm font-bold shadow-[0_4px_14px_rgba(249,115,22,0.4)] hover:shadow-[0_4px_18px_rgba(249,115,22,0.6)] transition-all duration-200 active:scale-95">
           <DownloadIcon />
           CV
         </button>
       </a>
-
     </nav>
   );
 }
