@@ -1,3 +1,4 @@
+import { usePresence } from "framer-motion";
 import { useState, useEffect } from "react";
 
 // --- Icons ---
@@ -66,6 +67,7 @@ const navLinks = [
 export default function Navbar() {
   const [active, setActive] = useState(0);
   const [time, setTime] = useState("");
+  const onlineCount = usePresence();
   // const [userCount, setUserCount] = useState(39);
 
   // Clock Logic
@@ -152,9 +154,7 @@ export default function Navbar() {
         <span className="text-white/40">
           <UsersIcon />
         </span>
-        <span className="text-white/80 text-xs font-medium">
-          39
-        </span>
+        <span className="text-white/80 text-xs font-medium" title="People viewing right now">{onlineCount}</span>
       </div>
 
       {/* Bookmark */}
